@@ -1,3 +1,8 @@
+
+a:link    {color: white}
+a:visited    {color: white}
+a:active    {color: white}
+
 body {
     margin: 0;
     height: 100vh;
@@ -57,8 +62,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    display: flex; /* Use flexbox to align buttons in a row */
-    gap: 10px; /* Add spacing between buttons */
+    display: flex;
+    gap: 10px;
 }
 
 .buttons button {
@@ -77,25 +82,26 @@ body {
     color: #121212;
 }
 
-#historie-text, #druhy-text, #vyvoj-text {
-    display: none; /* Hidden by default */
+#historie-text, #druhy-text, #vyvoj-text, #uvod-text {
+    display: none;
 
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
+    text-align: justify;
     color: white;
     z-index: 2;
 }
 
 #down {
     position: absolute;
-    background-color:rgb(70, 70, 70);
+    background-color: transparent;
     top: 95%;
     left: 0%;
     width: 100%;
@@ -107,4 +113,22 @@ body {
     text-align: center;
     font-size: 14px;
     color: white;
+    z-index: 4;
+}
+
+#easteregg-text {
+    display: none;
+
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    text-align: justify;
+    color: white;
+    z-index: 5;
 }

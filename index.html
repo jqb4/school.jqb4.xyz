@@ -18,21 +18,46 @@
     </div>
     <div id="below-text">
         <div class="buttons">
+            <button id="uvod-button" onclick="showSection('uvod-text')">Úvod</button>
             <button id="historie-button" onclick="showSection('historie-text')">Historie</button>
             <button id="druhy-button" onclick="showSection('druhy-text')">Druhy</button>
             <button id="vyvoj-button" onclick="showSection('vyvoj-text')">Vývoj</button>
         </div>
     </div>
-    <div id="historie-text" class="section">Historie</div>
-    <div id="druhy-text" class="section">Druhy hodin</div>
-    <div id="vyvoj-text" class="section">Vývoj hodin</div>
+
+
+    <div id="uvod-text" class="section">
+        <h2>Úvod</h2>
+    </div>
+
+    <div id="historie-text" class="section">
+        <h2>Historie</h2>
+    </div>
+
+    <div id="druhy-text" class="section">
+        <h2>Druhy hodin</h2>
+    </div>
+
+    <div id="vyvoj-text" class="section">
+        <h2>Vývoj hodin</h2>
+    </div>
 
     <div class="buttons">
         <button id="reset-button" onclick="resetView()" style="display: none;">Zpět</button>
     </div>
 
-    <div class="down">JB 2024</div>
+
+    <div id="down"><a href="https://jqb4.xyz">jqb4</a> <a id="easteregg" onclick="showSection('easteregg-text')">2024</a> | <a href="https://github.com/jqb4/school.jqb4.xyz">github</a></div>
     <script src="script.js"></script>
     <script src="pages.js"></script>
+
+    <div id="easteregg-text" style="display:none;">
+        <pre>
+                  |\      _,,,---,,_
+            ZZZzz /,`.-'`'    -.  ;-;;,_
+                 |,4-  ) )-,_. ,\ (  `'-'
+                '---''(_/--'  `-'\_) 
+        </pre>
+    </div>
 </body>
 </html>

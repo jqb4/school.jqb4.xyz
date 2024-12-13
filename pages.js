@@ -3,6 +3,8 @@ function showSection(sectionId) {
     document.getElementById("historie-text").style.display = "none";
     document.getElementById("druhy-text").style.display = "none";
     document.getElementById("vyvoj-text").style.display = "none";
+    document.getElementById("uvod-text").style.display = "none";
+    document.getElementById("easteregg-text").style.display = "none";
 
     // Show the selected section
     document.getElementById(sectionId).style.display = "block";
@@ -20,6 +22,8 @@ function resetView() {
     document.getElementById("historie-text").style.display = "none";
     document.getElementById("druhy-text").style.display = "none";
     document.getElementById("vyvoj-text").style.display = "none";
+    document.getElementById("uvod-text").style.display = "none";
+    document.getElementById("easteregg-text").style.display = "none";
 
     // Show the overlay text and buttons
     document.querySelector(".buttons").style.display = "flex"; // Use 'flex' for inline button layout
