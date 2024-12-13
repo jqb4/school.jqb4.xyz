@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synced Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <h1 id="clock"></h1>
+        <div id="overlay-text">Hodiny</div>
+    </div>
+    <div id="below-text">
+        <div class="buttons">
+            <button id="historie-button" onclick="showSection('historie-text')">Historie</button>
+            <button id="druhy-button" onclick="showSection('druhy-text')">Druhy</button>
+            <button id="vyvoj-button" onclick="showSection('vyvoj-text')">Vývoj</button>
+        </div>
+    </div>
+    <div id="historie-text" class="section">Historie</div>
+    <div id="druhy-text" class="section">Druhy hodin</div>
+    <div id="vyvoj-text" class="section">Vývoj hodin</div>
+
+    <div class="buttons">
+        <button id="reset-button" onclick="resetView()" style="display: none;">Zpět</button>
+    </div>
+
+    <div class="down">JB 2024</div>
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+</body>
+</html>
