@@ -93,7 +93,7 @@ body {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 15px;
     text-align: justify;
     color: white;
     z-index: 2;
@@ -114,21 +114,4 @@ body {
     font-size: 14px;
     color: white;
     z-index: 4;
-}
-
-#easteregg-text {
-    display: none;
-
-    font-family: monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    text-align: justify;
-    color: white;
-    z-index: 5;
 }
