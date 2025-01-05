@@ -302,7 +302,7 @@ nav a{
 
     }
 
-    #menu{
+    .menu-icon{
         display: none;
     }
 }
@@ -340,7 +340,7 @@ main{
 .guidlines{
     width: 70vw;
 }
-#menu{
+.menu-icon{
     display: none;
 }
 }
@@ -380,7 +380,7 @@ main{
     .guidlines{
         width: 78vw;
     }
-    #menu{
+    .menu-icon{
         display: none;
     }
 }
@@ -422,14 +422,17 @@ main{
     }
 
     /*navbar*/
+
     nav{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
     }
     nav ul li a{
         padding: 5px;
         margin: 2px;
-        color: black;
+        color: white;
         border-radius: 5px;
         font-size: 0.9em;
         text-align: center;
@@ -440,13 +443,9 @@ main{
     }
     nav ul{
         display:none;
-        background-color: #e97c9c;
-        margin: 10px;
+        background-color: #88468d;
         padding: 5px;
-        border-radius: 10px;
-
-        position: relative;
-        z-index: 10;
+        flex-basis: 100%;
     }
     #menu:checked ~ #navbar{
         display: block;
@@ -484,7 +483,18 @@ main{
         align-items: flex-end;
         /*border-radius: 0 0 10px 10px;*/
     }
-    header{
-        background-color: white;
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        color: black;
+        text-align: center;
+        width: 35px;
+        padding: 0 10px;
+        margin: 0;
     }
+}
+
+    
+#menu {
+    display: none;
 }
